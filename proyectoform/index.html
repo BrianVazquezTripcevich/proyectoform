@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/estilos.css">
+    <title>Formulario</title>
+</head>
+    <body>
+        <header>
+            <h1>Bienvenido a PROCODE</h1>
+            <main>
+
+                <nav>
+                    <ul class="main-nav">
+                        <li class="main-nav__item"><a href="">Home</a></li>
+                        <li class="main-nav__item"><a href="">Cursos</a></li>
+                        <li class="main-nav__item"><a href="">Instructores</a></li>
+                        <li class="main-nav__item"><a href="">Blog</a></li>
+                    </ul>
+                </nav>
+    
+                <p>Por favor, rellene el siguiente formulario:</p>
+
+    <form>
+        <label for="Nombre y apellido">
+                <span>Nombre y apellido</span>
+                <input type="text" id="Nombre y apellido" name="Nombre y apellido" placeholder="Nombre completo y apellido" autocomplete="name">
+        </label>
+        <label for="Email">
+                <span>Correo electronico</span>
+                <input type="email" id="Email" name="Email" placeholder="Tu email" autocomplete="email" required>
+        </label>
+        <label for="Edad">
+                <span>Edad</span>
+                <input type="number" id="Edad" name="Edad" autocomplete="">
+        </label>
+        <label for="Ciudad">
+                <span>Ciudad</span>
+                <input type="text" id="Ciudad" name="Ciudad" placeholder="Ciudad actual" autocomplete="address-level1">
+        </label>
+
+        <label for="Inicio de Cursado">
+                <span>¿Cuando quieres iniciar?</span>
+                <input type="date" id="Inicio de Cursado" name="Inicio de Cursado" required>
+        </label>
+    </form>
+
+         
+            </main>
+        </header>
+     <footer>
+        
+            <span>¿Que curso te interesa?</span>
+            <input list="cursos">
+            <datalist id="cursos">
+                <option value="Java">Java</option>
+                <option value="Phyton">Phyton</option>
+                <option value="JavaScript">JavaScript</option>
+                <option value="Php">Php</option>
+       
+            </datalist>
+
+    
+    </footer>
+
+</body>
+
+
+</html>
